@@ -1,7 +1,8 @@
 #!/usr/bin/node
-function add(a, b) {
-	const sum = a + b;
-	console.log(`the sum of ${a} && ${b} is ${sum}.`);
+// script that prints the addition of 2 integers
+const a = parseInt(process.argv[2]);
+const b = parseInt(process.argv[3]);
+function add (a, b) {
+  return a + b;
 }
-
-add(5,10)
+console.log(add(a, b));
